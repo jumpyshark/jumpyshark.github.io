@@ -16,8 +16,7 @@ function genWord(){
         word = word+basicHiragana[randInd];
     }
 
-    romaji = wanakana.toRomaji(word);
-    /*'\u002c\u0020' = comma space*/
+    romaji = wanakana.toRomaji(word); /*'\u002c\u0020' = comma space*/
 
     document.getElementById("display").innerHTML = word;
     document.getElementById("btn01").disabled = true;
