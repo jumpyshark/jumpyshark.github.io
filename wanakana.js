@@ -5,7 +5,7 @@ let sn = 1;
 let ps = ns = 0;
 
 window.onload = function() {
-  document.getElementById("answer").focus();
+  document.getElementById("btn01").focus();
 }
 
 function genWord(){
