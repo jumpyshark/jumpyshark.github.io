@@ -1,1 +1,30 @@
-Hell World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+    <title>Hiragana Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="display"></div>
+
+        <div id="romaji"></div>
+
+        <div id="scoreboard">
+            <div id="ps">0</div>
+            <div id="ns">0</div>
+        </div>
+        
+        <input type="text" placeholder="Type your answer here...." id="answer"></br>
+        <input type="button" id="btn01" value="Generate Word" onclick=genWord()>
+        <input type="button" id="btn02" value="Check Answer" onclick= "checkAns()" disabled>
+
+        <script src="wanakana.js"></script>
+    </div>
+</body>
+
+</html>
