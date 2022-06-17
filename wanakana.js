@@ -4,6 +4,21 @@ let romaji = "";
 let sn = 1;
 let ps = ns = 0;
 
+window.onload = function() {
+  document.getElementById("answer").focus();
+}
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn02").click();
+  }
+}
+
 function genWord(){
     word = "";  
     wordLen = Math.floor(Math.random() * (8-0))+1;
@@ -20,10 +35,12 @@ function genWord(){
     document.getElementById("btn02").disabled = false;
     document.getElementById("answer").value = "";
     document.getElementById("romaji").innerHTML = "";
+    document.getElementById("answer").focus();
 }
 
 function checkAns(){
     let x = document.getElementById("answer").value;
+    document.getElementById("btn01").focus();
     document.getElementById("btn02").disabled = true;
     document.getElementById("btn01").disabled = false;
 
