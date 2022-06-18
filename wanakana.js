@@ -28,9 +28,9 @@ function genWord(){
 
 function checkAns(){
     let x = document.getElementById("answer").value;
-    document.getElementById("btn01").focus();
     document.getElementById("btn02").disabled = true;
     document.getElementById("btn01").disabled = false;
+    document.getElementById("btn01").focus();
 
     if (x == romaji){
     document.getElementById("romaji").innerHTML = "Correct";
@@ -43,6 +43,28 @@ function checkAns(){
     
 }
 
+function reset(){
+    document.getElementById("btn01").disabled = false;
+    document.getElementById("btn02").disabled = true;
+    ps = ns = 0;
+    document.getElementById("ps").innerHTML = 0;
+    document.getElementById("ns").innerHTML = 0;
+}
+
+var ans = document.getElementById("answer");
+ans.addEventListener("keypress", function(event){
+    if(event.key == "Enter"){
+        event.preventDefault();
+        document.getElementById("btn02").click();
+    }
+});
+
+addEventListener("keypress", function(event){
+    if(event.key == "r"){
+        event.preventDefault();
+        reset()
+    }
+});
 
 let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
 
