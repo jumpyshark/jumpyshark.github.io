@@ -9,6 +9,8 @@ html, body{
     align-items: center;
     text-align: center;
     height: 100%;
+    background-image: url("images/blur-blue.jpg");
+    background-size: 100%;
 }
 
 .container{
