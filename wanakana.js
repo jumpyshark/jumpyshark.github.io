@@ -49,6 +49,8 @@ function reset(){
     ps = ns = 0;
     document.getElementById("ps").innerHTML = 0;
     document.getElementById("ns").innerHTML = 0;
+    document.getElementById("display").innerHTML = "";
+    
 }
 
 var ans = document.getElementById("answer");
@@ -59,12 +61,12 @@ ans.addEventListener("keypress", function(event){
     }
 });
 
-addEventListener("keypress", function(event){
-    if(event.key == "r"){
-        event.preventDefault();
-        reset()
-    }
-});
+// addEventListener("keypress", function(event){
+//     if(event.key == "r"){
+//         event.preventDefault();
+//         reset()
+//     }
+// });
 
 let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
 
