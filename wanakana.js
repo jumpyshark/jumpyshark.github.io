@@ -4,6 +4,10 @@ let romaji = "";
 let sn = 1;
 let ps = ns = 0;
 
+window.onload = function() {
+  document.getElementById("btn01").focus();
+}
+
 function genWord(){
     word = "";  
     wordLen = Math.floor(Math.random() * (8-0))+1;
@@ -12,18 +16,19 @@ function genWord(){
         word = word+basicHiragana[randInd];
     }
 
-    romaji = wanakana.toRomaji(word);
-    /*'\u002c\u0020' = comma space*/
+    romaji = wanakana.toRomaji(word); /*'\u002c\u0020' = comma space*/
 
     document.getElementById("display").innerHTML = word;
     document.getElementById("btn01").disabled = true;
     document.getElementById("btn02").disabled = false;
     document.getElementById("answer").value = "";
     document.getElementById("romaji").innerHTML = "";
+    document.getElementById("answer").focus();
 }
 
 function checkAns(){
     let x = document.getElementById("answer").value;
+    document.getElementById("btn01").focus();
     document.getElementById("btn02").disabled = true;
     document.getElementById("btn01").disabled = false;
 
