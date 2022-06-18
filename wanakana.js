@@ -25,10 +25,10 @@ function genWord(){
     document.getElementById("romaji").innerHTML = "";
     document.getElementById("answer").focus();
     window.scroll({
-        top: 0, 
+        top: 100, 
         left: 0, 
         behavior: 'smooth' 
-       });;
+       });
 }
 
 function checkAns(){
