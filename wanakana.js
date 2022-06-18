@@ -24,6 +24,11 @@ function genWord(){
     document.getElementById("answer").value = "";
     document.getElementById("romaji").innerHTML = "";
     document.getElementById("answer").focus();
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+       });;
 }
 
 function checkAns(){
