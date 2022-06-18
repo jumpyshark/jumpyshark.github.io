@@ -11,12 +11,6 @@ html, body{
     height: 100%;
 }
 
-body{
-    background-image: url("images/blur-blue.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .container{
     display: grid;
     grid-template-columns: auto;
