@@ -32,7 +32,7 @@ function genWord(){
 }
 
 function checkAns(){
-    let x = document.getElementById("answer").value;
+    let x = document.getElementById("answer").value.toLowerCase();
     document.getElementById("btn02").disabled = true;
     document.getElementById("btn01").disabled = false;
     document.getElementById("btn01").focus();
