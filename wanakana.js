@@ -25,7 +25,7 @@ function genWord(){
     document.getElementById("romaji").innerHTML = "";
     document.getElementById("answer").focus();
     window.scroll({
-        top: 0, 
+        top: 500, 
         left: 0, 
         behavior: 'smooth' 
        });;
