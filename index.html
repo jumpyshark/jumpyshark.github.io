@@ -3,40 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
-    <title>Hiragana Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row"></div>
-        <div id="main">
-            <div class="row title">Hiragana Quiz</div>
-            <div class="row" style="grid-column: 1/3;"></div>
-            <div class="row" style="grid-column: 1/3;"></div>
-            <div class="screen">
-                <div id="display"></div>
-                <div id="romaji"></div>
-            </div>
-            <div id="scoreboard">
-                <div id="ps">0</div>
-                <div id="ns">0</div>
-            </div>
-            <div class="row" style="grid-column: 1/3;"></div>
-            <div class="row" style="grid-column: 1/3;"></div>
-            <input type="text" placeholder="Type your answer here...." id="answer">
-            <div class="row" style="grid-column: 1/3;"></div>
-            <div class="row sm" style="grid-column: 1/3;">Just keep pressing enter ;</div>
-            <input type="button" id="btn01" value="Generate Word" onclick=genWord()>
-            <input type="button" id="btn02" value="Check Answer" onclick="checkAns()" disabled>
-            <input type="button" id="btn03" value="Reset" onclick="reset()">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand mb-0 h1">Logo</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collpapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Basics
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                            <li><a href="kana.html" class="dropdown-item">Kana</a></li>
+                            <li><a href="numbers.html" class="dropdown-item">Numbers</a></li>
+                            <li><a href="time.html" class="dropdown-item">Time and Periods</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Lessons
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                            <li><a href="lesson1.html" class="dropdown-item">Lesson 1</a></li>
+                            <li><a href="lesson2.html" class="dropdown-item">Lesson 2</a></li>
+                            <li><a href="lesson3.html" class="dropdown-item">Lesson 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row"></div>
+    </nav>
+
+    <div class="container row">
+        <p>
+            Hello everyone...
+        </p>
     </div>
-    <script src="wanakana.js"></script>
+
+
+    <script src="script/bootstrap.bundle.js"></script>
 </body>
 
 </html>
