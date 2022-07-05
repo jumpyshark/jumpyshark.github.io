@@ -1,52 +1,80 @@
 @media only screen and (max-width: 600px) {
-    .container-table{
+    .container-table {
         font-size: 14px;
     }
 
-    .sidebar{
+    .sidebar {
         display: none;
+    }
+
+    * {
+        transition-duration: 0.5s;
     }
 }
 
-h4,p{
+/* mascot bottom right
+ .mascot{
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    opacity: 1;
+} */
+
+/* mascot middle */
+.mascot {
+    opacity: 0.5;
+    margin: auto;
+}
+
+.mascot:hover {
+    opacity: 1;
+}
+
+h3,
+h4,
+h5,
+p {
+    margin-top: 10px;
     text-align: left;
 }
 
-.float-start{
+.float-start {
     clear: left;
 }
 
-.navbar{
+.navbar {
     box-shadow: 0 0 5px;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: rgb(54, 52, 50);
 }
 
-.sidebar-item{
+.sidebar-item {
     position: fixed;
 }
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 1px;
-  }
-  
-  ::-webkit-scrollbar-track {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
     background: #f1f1f145;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
 /* table */
-.container-table{
+.container-table {
     border-radius: 2px;
     max-height: 500px;
     overflow-y: auto;
@@ -54,18 +82,18 @@ h4,p{
 }
 
 div.odd-row> :nth-of-type(2n+3) {
-    background-color: rgb(165, 205, 240);
+    background-color: rgb(165, 205, 240, 0.9);
 }
 
 div.even-row> :nth-of-type(2n) {
-    background-color: rgb(165, 205, 240);
+    background-color: rgba(165, 205, 240, 0.9);
 }
 
-div.even-col> .row :nth-child(2n+1){
+div.even-col>.row :nth-child(2n+1) {
     border-right: 1px groove;
 }
 
-div.odd-col> .row :nth-child(2n){
+div.odd-col>.row :nth-child(2n) {
     border-left: 1px groove;
     border-right: 1px groove;
 }
@@ -75,16 +103,20 @@ div.odd-col> .row :nth-child(2n){
     background-color: rgb(33, 151, 55);
 }
 
-.container-table>.row>div{
+.container-table>.row>div {
     padding: 5px;
 }
 
-.calendar> .row :nth-of-type(7){
+.calendar>.row :nth-of-type(7) {
     font-weight: 550;
     color: rgb(255, 0, 0);
 }
 
-.calendar> .table-header :nth-of-type(7){
+.calendar>.table-header :nth-of-type(7) {
     font-weight: 550;
     color: rgb(255, 202, 202);
+}
+
+.table :nth-child(n) {
+    border-left: 1px groove;
 }
