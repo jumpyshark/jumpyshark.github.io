@@ -7,15 +7,24 @@
         display: none;
     }
 
-    * {
-        transition-duration: 0.5s;
+    .float-start{
+        margin:auto !important;
+        clear: left;
     }
-}
+
+    .nav-btm > button{
+        margin: auto;
+    }
+}  
 
 @font-face {
     font-family: KFhimajiMAJI;
     src: url("KFhimajiMAJI.otf") format("opentype");
 }
+
+* {
+        transition-duration: 0.5s;
+    }
 
 
 /* mascot bottom right
@@ -47,6 +56,8 @@ p {
 }
 
 .float-start {
+    margin-top: 50px;
+    margin-left: 50px;
     clear: left;
 }
 
