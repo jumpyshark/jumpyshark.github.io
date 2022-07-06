@@ -76,7 +76,7 @@ p {
 /* table */
 .container-table {
     border-radius: 2px;
-    max-height: 500px;
+    /* max-height: 500px; */
     overflow-y: auto;
     border: 1px groove;
 }
@@ -119,4 +119,8 @@ div.odd-col>.row :nth-child(2n) {
 
 .table :nth-child(n) {
     border-left: 1px groove;
+}
+
+.hmax{
+    text-align: left;
 }

@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body onload="intro()">
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand mb-0 h1"><img src="images/favicon.ico"
                     class="d-inline-block align-top" width="30" height="30" alt="Logo">Nihongo</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button type="button" class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -27,7 +27,7 @@
                             Home
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" id="basics">
                         <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown">
                             Basics
@@ -38,7 +38,7 @@
                             <li><a href="date-time.html" class="dropdown-item">Time and Periods</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown">
                             Lessons
@@ -47,6 +47,17 @@
                             <li><a href="lesson1.html" class="dropdown-item">Lesson 1</a></li>
                             <li><a href="lesson2.html" class="dropdown-item">Lesson 2</a></li>
                             <li><a href="lesson3.html" class="dropdown-item">Lesson 3</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Vocabulary
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                            <li><a href="guide/lesson1.html" class="dropdown-item">Lesson 1</a></li>
+                            <li><a href="guide/lesson2.html" class="dropdown-item">Lesson 2</a></li>
+                            <li><a href="guide/lesson3.html" class="dropdown-item">Lesson 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,8 +74,9 @@
                 journey so far (not much); But I will be trying my best to update the contents along the way.
                 Feel free to peruse this poorly written "website" ;)
             </p>
-            <p style="font-size: 50px; text-align: center;">
-                (❁´◡`❁)
+            <p style="font-size: 40px; text-align: center; cursor: pointer;" onclick="openmenu()">
+                (❁´◡`❁)<br>
+                <span style="font-size: 16px" id="intro">Click me to start browsing available lessons!</span>
             </p>
 
             <img src="images/yotsubato_box.png" class="mascot" alt=";(">
@@ -72,6 +84,7 @@
         </div>
     </div>
 
+    <script src="script/script.js"></script>
     <script src="script/popper.min.js"></script>
     <script src="script/jquery-3.6.0.min.js"></script>
     <script src="script/bootstrap.bundle.js"></script>
