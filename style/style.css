@@ -12,6 +12,12 @@
     }
 }
 
+@font-face {
+    font-family: KFhimajiMAJI;
+    src: url("KFhimajiMAJI.otf") format("opentype");
+}
+
+
 /* mascot bottom right
  .mascot{
     float: right;
