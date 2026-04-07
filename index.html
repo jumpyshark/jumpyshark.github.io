@@ -1,152 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihongo Journey - Master Japanese Learning</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <title>Japanese Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Elegant Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-brand">
-                <span class="brand-icon">🗾</span>
-                <span class="brand-text">Nihongo Journey</span>
-            </a>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Basics</a>
-                    <ul class="submenu">
-                        <li><a href="kana.html">Hiragana & Katakana</a></li>
-                        <li><a href="numbers.html">Numbers & Counting</a></li>
-                        <li><a href="date-time.html">Time & Periods</a></li>
-                    </ul>
-                </li>
-                <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Vocabulary</a>
-                    <ul class="submenu">
-                        <li><a href="lesson1.html">Lesson 1</a></li>
-                        <li><a href="lesson2.html">Lesson 2</a></li>
-                        <li><a href="lesson3.html">Lesson 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="sql.html" class="nav-link">SQL</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Your Japanese Learning Companion</h1>
-            <p class="hero-subtitle">A meticulously curated collection of lessons, vocabulary, and resources for your language journey</p>
-            <button class="cta-button" onclick="scrollToExplore()">Begin Your Journey</button>
-        </div>
-        <div class="hero-visual">
-            <img src="images/yotsubato_box.png" class="mascot-hero" alt="Yotsubato Mascot">
-        </div>
-    </section>
+    <header class="hero">
+        <h1>Learn Japanese with Us!</h1>
+        <p>Your journey to mastering Japanese starts here.</p>
+        <a href="#courses" class="cta-button">Explore Courses</a>
+    </header>
 
-    <!-- Learning Paths -->
-    <section class="learning-paths">
-        <div class="container">
-            <h2 class="section-title">Explore Your Path</h2>
-            <div class="paths-grid">
-                <!-- Foundation Path -->
-                <div class="path-card" onclick="navigateTo('kana.html')">
-                    <div class="card-icon">あ</div>
-                    <h3>Foundation</h3>
-                    <p>Master Hiragana, Katakana, and the building blocks of Japanese writing</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                    <span class="card-meta">3 lessons</span>
-                </div>
-
-                <!-- Numbers & Time Path -->
-                <div class="path-card" onclick="navigateTo('numbers.html')">
-                    <div class="card-icon">🔢</div>
-                    <h3>Numbers & Time</h3>
-                    <p>Learn counting systems, dates, and temporal expressions in Japanese</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                    <span class="card-meta">2 lessons</span>
-                </div>
-
-                <!-- Vocabulary Path -->
-                <div class="path-card" onclick="navigateTo('lesson1.html')">
-                    <div class="card-icon">📚</div>
-                    <h3>Vocabulary</h3>
-                    <p>Build practical vocabulary through themed lessons and contextual learning</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                    <span class="card-meta">3 lessons</span>
-                </div>
-
-                <!-- SQL Path -->
-                <div class="path-card" onclick="navigateTo('sql.html')">
-                    <div class="card-icon">💾</div>
-                    <h3>Database Queries</h3>
-                    <p>Explore SQL concepts integrated with Japanese language data</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                    <span class="card-meta">Reference</span>
-                </div>
-            </div>
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <article class="course">
+                <h3>Beginner Japanese</h3>
+                <p>Start from scratch and learn the basics of Japanese.</p>
+            </article>
+            <article class="course">
+                <h3>Intermediate Japanese</h3>
+                <p>Enhance your skills with our intermediate course.</p>
+            </article>
+            <article class="course">
+                <h3>Advanced Japanese</h3>
+                <p>Perfect your fluency with advanced conversational Japanese.</p>
+            </article>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">Welcome to Nihongo Journey</h2>
-                <p class="about-text">
-                    This is a meticulously compiled collection of everything I've learned on my Japanese language journey—
-                    a living document that grows with each discovery. Whether you're starting from scratch or refining advanced skills,
-                    you'll find structured, thoughtfully-organized content here.
-                </p>
-                <p class="about-text">
-                    Each section is designed to build upon the last, creating a cohesive learning experience. 
-                    Join me as we explore the beautiful complexity of the Japanese language together.
-                </p>
-                <div class="stats-row">
-                    <div class="stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Lessons</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Learning Paths</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Possibilities</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Interactive Quizzes</li>
+            <li>Live Sessions with Tutors</li>
+            <li>Community Support</li>
+        </ul>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Nihongo Journey. Crafted with <span class="heart">♡</span> for language learners everywhere.</p>
-            <div class="social-links">
-                <a href="https://github.com/jumpyshark" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
+    <!-- Resources Section -->
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Access our library of learning materials, articles, and guides.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <blockquote>
+            <p>"This is the best platform for learning Japanese!" - Satisfied Student</p>
+        </blockquote>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Start Learning?</h2>
+        <a href="#courses" class="cta-button">Sign Up Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Japanese Learning Hub. All rights reserved.</p>
     </footer>
 
-    <script src="script/script.js"></script>
 </body>
-
 </html>
